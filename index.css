@@ -1,0 +1,56 @@
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(200px, auto) 1fr;
+  grid-template-areas: "navbar main";
+  grid-gap: 20px;
+}
+
+navbar {
+  grid-area: navbar;
+  position: fixed;
+  max-width: 200px;
+}
+a {
+  display: block;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+  max-width: 200px;
+}
+a:hover {
+  background: #000000;
+  color: #f1f1f1;
+  font-weight: bold;
+}
+header {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+code {
+  display: block;
+  background: lightgrey;
+  border: 1px solid black;
+  padding: 20px;
+}
+main {
+  grid-area: main;
+  padding: 10px;
+  margin: 8px;
+  
+}
+  section.main-section {
+    border: 1px solid black;
+    margin: 1em;
+  }
+@media screen and (max-width: 750px) {
+  body{
+  grid-template-columns: 1fr;
+  grid-template-areas: "navbar main";
+    
+  }
+  nav{
+  position: inherit;
+}
+
