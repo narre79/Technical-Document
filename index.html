@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Technical Document</title>
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <header>JavaScript basics</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Example" class="nav-link">Example</a>
+    <a href="#Varibles" class="nav-link">Varibles</a>
+    <a href="#Comments" class="nav-link">Comments</a>
+    <a href="#Operators" class="nav-link">Operators</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript ("JS" for short) is a full-fledged dynamic programming language that, when applied to an HTML document, can provide dynamic interactivity on websites. It was invented by Brendan Eich, co-founder of the Mozilla project, the Mozilla Foundation,
+        and the Mozilla Corporation.</p>
+      <p>JavaScript is incredibly versatile. You can start small, with carousels, image galleries, fluctuating layouts, and responses to button clicks. With more experience, you'll be able to create games, animated 2D and 3D graphics, comprehensive database-driven
+        apps, and much more!</p>
+      <ul>
+        <li>Browser Application Programming Interfaces (APIs) — APIs built into web browsers, providing functionality like dynamically creating HTML and setting CSS styles, collecting and manipulating a video stream from the user's webcam, or generating 3D
+          graphics and audio samples.</li>
+        <li>Third-party APIs — Allow developers to incorporate functionality in their sites from other content providers, such as Twitter or Facebook.</li>
+        <li>Third-party frameworks and libraries — You can apply these to your HTML to allow you to rapidly build up sites and applications.</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Example">
+      <header>Example</header>
+      <p>The above section might sound really exciting, and so it should — JavaScript is one of the most lively web technologies, and as you start to get good at using it, your websites will enter a new dimension of power and creativity.</p>
+      <p>However, becoming comfortable with JavaScript is a little harder than becoming comfortable with HTML and CSS. You may have to start small and keep working in small consistent steps. To start, we'll show how to add some basic JavaScript to your page,
+        creating a "hello world!" example (the standard in basic programming examples).</p>
+      <ol>
+        <li>First, go to your test site and create a new folder named scripts. Then, within the new scripts folder you just created, create a new file called main.js. Save it in your scripts folder.</li>
+
+        <li>Next, in your index.html file enter the following element on a new line just before the closing </body> tag: </li>
+<li>This is basically doing the same job as the
+  <link> element for CSS — it applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+<li>Now add the following code to the main.js file: </li>
+<code>var myHeading = document.querySelector('h1');
+myHeading.textContent = 'Hello world!';</code>
+<li>Finally, make sure the HTML and JavaScript files are saved, then load index.html in the browser. You should see something like the following:</li>
+</ol>
+</section>
+
+<section class="main-section" id="Varibles">
+  <header>Varibles</header>
+  <p>Variables are containers that you can store values in. You start by declaring a variable with the var keyword, followed by any name you want to call it:</p>
+  <code>var myVariable;</code>
+  <p>After declaring a variable, you can give it a value:</p>
+  <code>myVariable = 'Bob';</code>
+  <p>You can do both these operations on the same line if you wish:</p>
+  <code>var myVariable = 'Bob';</code>
+  <p>You can retrieve the value by just calling the variable by name:</p>
+  <code>myVariable;</code>
+  <p>After giving a variable a value, you can later choose to change it:</p>
+  <code>var myVariable = 'Bob';
+myVariable = 'Steve';</code>
+  <p>Note that variables may hold values that have different data types:</p>
+
+</section>
+
+<section class="main-section" id="Comments">
+  <header>Comments</header>
+  <p>You can put comments into JavaScript code, just as you can in CSS:</p>
+  <code>/*
+Everything in between is a comment.
+*/</code>
+  <p>If your comment contains no line breaks, it's often easier to put it behind two slashes like this:</p>
+  <code>// This is a comment</code>
+</section>
+
+<section class="main-section" id="Operators">
+  <header>Operators</header>
+  <p>An operator is a mathematical symbol which produces a result based on two values (or variables). In the following table you can see some of the simplest operators, along with some examples to try out in the JavaScript console.</p>
+  <p>There are a lot more operators to explore, but this is enough for now. See Expressions and operators for a complete list.</p>
+</section>
+
+</main>
+</body>
+<footer>
+
+</footer>
+
+</html>
